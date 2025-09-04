@@ -3,12 +3,12 @@ from django.shortcuts import render
 def pagina_inicio(request):
     informacion_personal = {
         'nombre': 'Víctor',
-        'apellido': 'Mondaca',
+        'apellido': 'Mondaca Oyarzún',
         'ciudad': 'Cumpeo',
         'profesion': 'Administrador de Empresas',
         'carrera': 'Tecnico Analista Programador',
         'descripcion': 'Apasionado por la tecnología y el desarrollo de software',
-        'musica_favorita': 'Rock Alternativo'
+        'musica_favorita': 'Cumbia Chilena'
     }
     return render(request, 'miPrimerApp/index.html', {'datos': informacion_personal})
 
